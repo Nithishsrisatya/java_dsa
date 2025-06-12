@@ -1,0 +1,8 @@
+1. Write a program to convert an infix expression into postfix.
+2. Write a program to evaluate a postfix expression.
+3. Implement the algorithm of how floating point numbers are stored in memory.
+4. Which are the 2 relational operators using which all other relational operators can be implemented?
+5. Draw-back of PPL
+6. Advantages of OOPL
+7. Disadvantages of C++
+8. Solutions given by Java to overcome problems of C++

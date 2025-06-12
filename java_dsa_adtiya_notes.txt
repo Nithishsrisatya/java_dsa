@@ -134,10 +134,152 @@ Numeric:
 		int
 		long
 	number with precision/accuracy:
+
+-----------------------------
+To create a new project in eclipse:
+
+File -> New -> Project -> Java Project
+In the Dialogue box (new window)
+De-select the module.java check box
+Enter project name ("practice") and Click Finish
+
+Now in the explorer, expand the project folder
+Now Right Click src folder -> create -> new -> package
+Give the package name "day1"
+
+Right Click "day1" in explorer (under src), create -> new -> class
+Class name "HelloWorld"
+
+primitive types in Java:
+Numeric:
+	number only
+		byte
+		short
+		int 
+		long
+	number with precision/accuracy
 		float
 		double
 char
 boolean
 
-Arthimetic Operation:
-+, -, *, /, %
+ARITHMETIC OPERATORS:
++ - * / %
+
+All the operators take 2 operands/input
+Hence, all are binary operators
+The expression is written using INFIX notation.
+55 + 5
+i/p are numbers
+o/p is also a number
+5 + 8 / 9
+The division must be evaluated 1st. Boadmas rule
+3 + 5 - 9
+All Arithmetic operators have Left to Right Associtivity.
+The Infix expression is what we users use. But it will be 1st converted to postfix expression and only then it is evaluated.
+
+int num = 45;
+00000000 00000000 00000000 00101101
+00101101
+
+int num = -45;
+
+00101101
+11010010
+11010011
+-1*2(7) + 1 * 2(6) + 1 * 2(4) + 3
+-128 + 64 + 16 + 3
+= -64 + 19
+= -45
+
+float num = 5.5;
+
+sum = 55 + (-50) + 5.5
+sum = 5 + 5.5
+When the expression has operands of different types, then the lower sized DT value is converted to a value of higher sized DT, and only then the expression is solved. This is because the data must not be lost (decimal part of the number)
+----------------------------------
+DAY2 11-06-2025 WEDNESDAY
+Java languages basics
+
+Relational Operators:
+> < >= <= != ==
+
+I/P are numbers
+O/P is boolean
+All are binary operators
+Used with Infix notation
+Has lesser precedence than Arithmetic operators
+Has higher precedence than logical operators
+
+for i from 1 to n do:
+for(int i = 1; i <= n; i++)
+for(int i = 1; i < n+1; i++)
+
+for(int i = 1; i <= 20; i++)
+for(int i = 1; i < 21;  i++)
+
+[10, 40]	closed interval 10 to 40
+(20, 30)	open interval 21 to 29
+[35, 65)	Right Open 35 to 64
+
+i = 10;
+j = 5;
+i++;
+j--;
+a[i] = b[j]
+b[j]--;
+
+i = 10;
+j = 5;
+a[++i] = b[--j]--;
+-------------------------------------
+Logical Operators:
+& && | || !
+
+I/P are boolean
+O/P is boolean
+All are binary operators expect the not operator
+Used with Infix notation
+Has lesser precedence than Arithmetic operators and relational but has higher precedence than assignment operator.
+
+The Post increment and Post decrement operators have lesser precedence than the assignment operator.
+
+The dot operator
+object.field
+Paranthesis has the highest priority.
+It is not an operators, but used to override the precedence of an operators.
+
+JAVA PROGRAM STRUCTURE:
+
+DISADVANTAGES OF C++:
+main() must be a global function.
+Global functions were allowed. Thus the solutions (apps.software) created with neither procedural nor OO.
+global variables are still allowed in C++.
+Files are loaded using macros and stored till end of the program
+pointers were always a mess to many a programmers
+The onus of creating and deleting objects in the Heap is on programmer.
+The inheritance is by default private which makes the accessing the inherited properties very difficult.
+Multiple inheritance creates a solution which is low cohesive.
+The operator overloading concept can be used to just implement anything which is unnecessary
+The compiler creates object file which is environment restricted/specific/dependent.
+Handling  runtime errors is difficult.
+Objects can be created in Stack area as well.
+Array is primitive in C++
+
+Java:
+No global functions. All are only methods. So you have strict OO solution.
+No global variables.
+signed and unsigned removed. Thus the primitive DTs are simplified.
+libraries can be loaded and used dynamically (No pre-processors)
+Pointers are abstracted and users are given references.
+All objects are created in Heap only
+Array is an object in java
+Creating object is the only job the programmer does. Object deletion is automated with the concept GRABAGE COLLECTOR.
+The inheritance is always public in Java
+There is no Multiple inheritance. All classes are always High cohesive. Thus the implementation is very easy.
+The only operator that can be overloaded is + and only for string concatination.
+The compiler creates bytecode which is environment(OS) independent.
+Handling  runtime errors is easy via exception Handling.
+The friend concept is removed. Thus no more ambiguous and complex classes.
+
+>>>>>>> e2c19639252178c366f9f4bee860afc5815741c9
