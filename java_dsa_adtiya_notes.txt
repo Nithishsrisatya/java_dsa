@@ -57,7 +57,7 @@ GITHUB:
 3. Create Personal Access Token (PAT)
 	Click on profile icon (Top right corner)
 	Click settings
-	In new window scroll down and on left, click developer settings
+	In new windown scroll down and on left, click developer settings
 	In new window, on top right, click personal access tokens, select Tokens classic
 	In new window, click generate new token, select generate new token classic
 	In window, add suitable note
@@ -111,30 +111,6 @@ $ git push (Always pushes to main branch)
 
 To check the status of the repo
 $ git status
------------------------------------------------
-
-To create a new project in eclipse:
-
-File-> New-> Project-> Java Project
-De-select the module.java check box
-Enter project name("pratice") and click Finish
-
-now in the explorer, expand the project folder.
-new Right clicksrc floder-> create -> new -> package
-Give the package name day1
-
-Right click "day1" in explorer (under src), create -> new -> class
-Class name HelloWorld
-
-Primitive Types in java:
-Numeric:
-	number only:
-		byte
-		short
-		int
-		long
-	number with precision/accuracy:
-
 -----------------------------
 To create a new project in eclipse:
 
@@ -295,9 +271,6 @@ public static void main(String[] args) {
 -------------------------------------------------------
 DAY3 FRIDAY 13-06-2025
 
-<<<<<<< HEAD
->>>>>>> e2c19639252178c366f9f4bee860afc5815741c9
-=======
 package day1;
 
 import java.util.Objects;
@@ -445,9 +418,6 @@ And if the instance or static variable is a reference type, then its default val
 
 The super() in the constructor will make call to immediate parent class sonstructor. And this call happens right at PROLOGUE of the child class constructor.
 We can optionally pass args to super(). However in such a case 
-<<<<<<< HEAD
->>>>>>> d3e1edb1ab711d3d7fc2d08da920787326243f22
-=======
 ------------------------------------------------------------------------------
 1. Check if the given positive integer is a perfect square.
 
@@ -531,4 +501,72 @@ The teacher has evaluated all the exam papers of the student Sushma. Help the co
 81 to 95		First class
 96 to 100		Outstanding
 
->>>>>>> c7e9f7484deafc4e9343872011b108c38345b126
+package day1;
+
+import java.util.Scanner;
+
+public class ExamResult {
+
+	public static void main(String[] args) {
+		float averageScore = 0.0f;
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter the student average score: ");
+		averageScore = scanner.nextFloat();
+		if(averageScore >= 0 && averageScore <= 59) {
+			System.out.println("Result is Fail");
+		}
+		else if(averageScore <= 80) {
+			System.out.println("Result is Second Class");
+		}
+		else if(averageScore <= 95) {
+			System.out.println("Result is First Class");
+		}
+		else if(averageScore <= 100) {
+			System.out.println("Result is Outstanding");
+		}
+		else {
+			System.out.println("Invalid Score entered");
+		}
+		scanner.close();
+	}
+}
+-------------------------------------------
+Tax Calculation Problem based on 2025 Govt Norms.
+
+Input data: name of the employee, location of the employee, designation of the employee, basic salary
+HRA 15% of basic if employee lives in cosmopolitin city, semi urban city 10%, rural 5%
+monthly bonus of 20% of basic salary
+DA of 12% on basic salary
+
+Level1:
+Calculate the monthly salary without bonus
+Calculate the monthly gross salary
+Calculate the annual gross salary
+
+Print employee details
+Print monthly gross salary
+Print annual gross salary
+Print the bonus earned for the year
+
+Level2:
+The income tax slabs are as follows:
+upto 5 lakhs: No Tax
+5,00,001 to 8,00,000 10%
+8,00,001 to 10,00,000 15%
+10,00,001 to 12,00,000 20%
+12,00,001 to 15,00,000 20%
+15,00,001 to 20,00,000 25%
+Above 20 Lakhs 30%
+
+The Charity amount under 80G can be deducted from the gross salary
+The interest paid on Home Loan of upto 1,20,000 can be claimed
+Under the section 87, if eligible can claim upto 3 lakhs.
+
+Print the taxable income
+
+Level3:
+Print employee details
+Print salary details (basic, monthly gross, annual gross, annual bonus)
+Print taxable income
+Print total standard deductions
+Print tax amount payable
