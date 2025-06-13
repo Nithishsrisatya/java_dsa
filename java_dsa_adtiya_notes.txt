@@ -445,4 +445,90 @@ And if the instance or static variable is a reference type, then its default val
 
 The super() in the constructor will make call to immediate parent class sonstructor. And this call happens right at PROLOGUE of the child class constructor.
 We can optionally pass args to super(). However in such a case 
+<<<<<<< HEAD
 >>>>>>> d3e1edb1ab711d3d7fc2d08da920787326243f22
+=======
+------------------------------------------------------------------------------
+1. Check if the given positive integer is a perfect square.
+
+STEPS TO SOLVE A PROBLEM:
+
+1. Understand the problem statement carefully and list the I/P data. List also the relavant information. Isolate the unwanted data or information. Ascertain what should be the O/P. Lastly, recognise the contraints.
+Outcome: You get to know the straight forward Question.
+
+2. Find a possible solution using what ever means. Trial and error method or using a spacific algorithm or formula. You may get multiple solutions as well. In such a case implement them one by one. Note that you have not even thought of programming or its concepts. Find solution mathematically.
+Outcome: We got a solution
+
+3. Write the Algorithm. Step by step procedure to solve the problem. Wehre each step is 
+finite, unambigious and simple.
+OutCome: You have a clearer solution via steps.
+
+4. Verify your solution. Using flow chart or trace the algorithm step by step (Debugging)
+OutCome: We have verified solution
+
+5. Write the Fake code if necessary (Pseudocode)
+
+6. Code it!
+
+n = 145
+145		12.05	12		144
+49		7.0		7		49
+
+math
+round()
+ciel()
+floor()
+
+Read the i/p, say N
+Using the built in logic, find the sq root of N. Store it in a variable, say PERFECT_ROOT
+Now, store the PERFECT_ROOT as integer number, say ROOT
+Now multiply ROOT with itself and check if it is equal to N
+If yes, then O/P N is PS
+If no, then O/P N is not a PS
+
+Read N
+PERFECT_ROOT = math.sqrt(N)
+ROOT = math.floor(PERFECT_ROOT)
+if ROOT * ROOT is N then
+	Print: N is PS
+else
+	Print: N is not a PS
+
+package day1;
+
+import java.util.Scanner;
+
+/*
+Read N
+PERFECT_ROOT = math.sqrt(N)
+ROOT = math.floor(PERFECT_ROOT)
+if ROOT * ROOT is N then
+	Print: N is PS
+else
+	Print: N is not a PS
+*/
+public class PerfectSquare {
+	
+	public static void main(String[] args) {
+		int inputNumber = 0;
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter a number to check if it is a Perfect Square: ");
+		inputNumber = scanner.nextInt();
+		int rootNumber = (int)Math.sqrt(inputNumber);
+		if(rootNumber * rootNumber == inputNumber) {
+			System.out.println(inputNumber + " is a Perfect Square");
+		}
+		else {
+			System.out.println(inputNumber + " is not a Perfect Square");
+		}
+	}
+}
+-----------------------------------------------------------------
+The teacher has evaluated all the exam papers of the student Sushma. Help the coordinator to write/declare the exam result depending on the average marks. The coordinator gets the average marks from the teacher. The coordinator must check if the average score is valid or not. Any average score which is not mentioned in the below table is invalid.
+
+0  to  59		Fail
+60 to 80		Second class
+81 to 95		First class
+96 to 100		Outstanding
+
+>>>>>>> c7e9f7484deafc4e9343872011b108c38345b126
