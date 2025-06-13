@@ -569,9 +569,7 @@ Print employee details
 Print salary details (basic, monthly gross, annual gross, annual bonus)
 Print taxable income
 Print total standard deductions
-<<<<<<< HEAD
-Print tax amount payable
-=======
+
 Print tax amount payable
 ------------------------------------------------------------
 Farmer Problem Statement
@@ -594,4 +592,3 @@ in one crop cycle across his entire land of 80 acres.
 What is
 a. The overall sales achieved by Mahesh from the 80 acres of land.
 b. Sales realisation from chemical-free farming at the end of 11 months?
->>>>>>> e11e5cbbed86bd88b09b7a45b1f2a883d4fc170b
