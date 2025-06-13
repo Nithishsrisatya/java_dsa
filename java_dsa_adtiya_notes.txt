@@ -57,7 +57,7 @@ GITHUB:
 3. Create Personal Access Token (PAT)
 	Click on profile icon (Top right corner)
 	Click settings
-	In new windown scroll down and on left, click developer settings
+	In new window scroll down and on left, click developer settings
 	In new window, on top right, click personal access tokens, select Tokens classic
 	In new window, click generate new token, select generate new token classic
 	In window, add suitable note
