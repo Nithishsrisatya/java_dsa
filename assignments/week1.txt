@@ -6,3 +6,5 @@
 6. Advantages of OOPL
 7. Disadvantages of C++
 8. Solutions given by Java to overcome problems of C++
+9. Java naming standards
+10. What is the use of Instance/static Initializer block.
