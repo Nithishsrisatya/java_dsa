@@ -18,3 +18,27 @@ Note: You can make other 3 combinations for the above program.
 5. Find nth placed digit in a number.
 6. Count number of Prime digits in a number.
 7. Count number of composite digits in a number.
+-----------------------------------------------------------
+if(count == 0 || tempNumber == 0)
+    sumOfDigits = remainderDigit;
+
+Arrays:
+int a, b, c, d, e, f, ...t;
+int[] array;
+array = new int[10];
+
+System.out.print()
+Here System is a class from java.lang package
+And out is a static reference variable of System class
+
+public final class System {
+    public static final PrintStream out;
+
+    static {
+        out = new PrintStream();
+    }
+}
+
+final variable:
+A variable once it is initialized (1st assignment) cannot be mutated. Thus final variables are read only variable.
+A final variable can be both static and non static.
