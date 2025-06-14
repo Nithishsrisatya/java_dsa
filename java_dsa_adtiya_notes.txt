@@ -592,3 +592,46 @@ in one crop cycle across his entire land of 80 acres.
 What is
 a. The overall sales achieved by Mahesh from the 80 acres of land.
 b. Sales realisation from chemical-free farming at the end of 11 months?
+---------------------------------------------------
+DAY4 SATURDAY 14-06-2025
+
+1. Find sum of the series 1 - n + n2 - n3 ..... M terms
+0<=N<=5, 1<=M<=25
+
+2. Find sum of Odd digits of a number.
+2345
+o/p: 8
+
+3. Find sum of Even placed digits in a number.
+9128735
+o/p: 12
+91827364
+o/p: 10
+
+
+45.0 / 7
+6.4
+
+45 // 7
+
+q 6
+r 3
+
+2345
+q 234
+r 5
+
+234
+q 23
+r 4
+
+23
+q 2
+r 3
+
+2
+q 0
+r 2
+
+0 STOP
+----------------------------
