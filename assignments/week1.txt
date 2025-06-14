@@ -10,11 +10,11 @@
 10. What is the use of Instance/static Initializer block.
 
 Programs:
-1. Find 2nd smallest/biggest digit in a number
+1. Find 2nd smallest/biggest digit in a number.
 2. Find sum of Odd placed Even Digits in a number. 
 Note: You can make other 3 combinations for the above program.
 3. Find smallest/biggest digit in a number.
 4. Find sum of 1st and last digits in a number.
-5. Find nth placed digit in a number
-6. Count number of Prime digits in a number
+5. Find nth placed digit in a number.
+6. Count number of Prime digits in a number.
 7. Count number of composite digits in a number.
