@@ -637,3 +637,50 @@ r 2
 ----------------------------
 Week1 Student Feedbacl Link:
 https://forms.gle/ZSeTzUx5Ka5hXHht7
+
+if(count == 0 || tempNumber == 0)
+    sumOfDigits = remainderDigit;
+
+Arrays:
+int a, b, c, d, e, f, ...t;
+int[] array;
+array = new int[10];
+
+System.out.print()
+Here System is a class from java.lang package
+And out is a static reference variable of System class
+
+public final class System {
+    public static final PrintStream out;
+
+    static {
+        out = new PrintStream();
+    }
+}
+
+final variable:
+A variable once it is initialized (1st assignment) cannot be mutated. Thus final variables are read only variable.
+A final variable can be both static and non static.
+A final class is one which cannot be inherited/extended
+A final method is one which cannot be overridden in the derived class.
+
+Data Structure: Storing data and also arranging/organising it in memory in so specific way to archive some efficiency (space or time or simplicity) is data structure.
+
+Array: An Array is a DS in which the elements of the array are stored in continuous memory locations.
+There is no gap between any 2 cosecutive elements in an Array.
+All elements of an array are of the same DT (same size).
+Array in Java is an Object. Because the objects has the array itself and also the length variable in it.
+Once the size of an array is fixed, it cannot be changed.
+To delete an array, just make the reeference null.
+An array is memory in-efficient DS.
+An array is time efficient DS because the look-up is O(1)
+Array is the most simple and primary DS.
+
+Creating an Array in Java:
+
+int array[10];
+byte size = scanner.nextByte();
+int[] array = new int[size];
+int[] array = new int[5]{1, 2, 3, 4, 5}; // ERROR
+int[] array = new int[]{1, 2, 3, 4, 5}; 
+int[] array = {1, 2, 3, 4, 5};

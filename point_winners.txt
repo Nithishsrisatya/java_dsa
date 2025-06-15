@@ -1,0 +1,18 @@
+Karthik		3, 1
+Koushik		1,1 
+Tanuja		1
+Rahul		2, 2
+Divya		1, 3
+Tejasri		3, 1
+Maheshwari	3, 2
+Shravya		1, 1
+Reetika		1
+Harini		1
+Prashanth	1
+Swathi		3
+Keerthi		1
+Shravanthi	2
+Visali		1
+Gopal		1
+
+	
