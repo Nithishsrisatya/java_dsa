@@ -1,1 +1,43 @@
-Real life Examples for aggregation and Composition.
+1. Real life Examples for aggregation and Composition.
+
+2. Problem on Loops:
+Retail Shopping Application with Enhanced Rules
+You are tasked with developing a retail shopping application for generating itemized invoices, applying
+business rules for discounts, surcharges, and quantities, and providing a seamless customer
+experience. The application unfolds across levels, each introducing new functionality, culminating in a
+complete solution that includes invoice generation and a breakdown of purchases.
+Levels:
+Level 1: Basic Item Entry and Total Calculation
+Objective: Allow the user to input item details (code, description, quantity, price) and calculate the
+total cost for the item.
+Key Steps:
+1. Accept item code, description, quantity, and price.
+2. Compute the total for a single item.
+3. Display the total for the item.
+Level 2: Iterative Item Entry and Grand Total
+Objective: Enable multiple items to be added iteratively, and compute the grand total for all items.
+Key Steps:
+1. Use a loop to accept details for multiple items.
+2. Compute the grand total by summing individual totals.
+3. Display the grand total after all items have been entered.
+Level 3: Applying Discounts and Surcharges
+Objective: Introduce business rules for modifying the grand total based on conditions.
+Rules Implemented:
+1. Discount: If the grand total exceeds ₹10,000, apply a 10% discount.
+2. Surcharge: If the grand total is less than ₹1,000 and payment is by card, apply a 2.5%
+surcharge.
+3. Quantity Discount: If the total quantity exceeds 20, apply an additional 5% discount on the
+grand total (after other discounts).
+Key Steps:
+1. Check conditions for discounts and surcharges.
+2. Adjust the grand total accordingly.
+3. Display the modified total with adjustments explained.
+Level 4: Membership Discounts
+Objective: Introduce a membership system where customers get an additional discount.
+Rules Implemented:
+1. If the customer is a member (choice: 'y'), apply an additional 2% discount on the grand total
+after all other adjustments.
+Key Steps:
+1. Prompt the user for membership status.
+2. Apply the membership discount if applicable.
+3. Update and display the final grand total.
