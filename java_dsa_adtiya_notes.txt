@@ -678,9 +678,182 @@ Array is the most simple and primary DS.
 
 Creating an Array in Java:
 
-int array[10];
+int array[10]; // Error
 byte size = scanner.nextByte();
 int[] array = new int[size];
 int[] array = new int[5]{1, 2, 3, 4, 5}; // ERROR
 int[] array = new int[]{1, 2, 3, 4, 5}; 
 int[] array = {1, 2, 3, 4, 5};
+--------------------------------------------
+DAY5 MONDAY 16-06-2025
+
+package day1;
+
+public class ArrayExample {
+	public static void main(String[] args) {
+		int size = 10;
+		int[] array;
+		int[] array1 = new int[size];
+		int[] array2 = new int[5]{1, 2, 3, 4, 5}; // ERROR
+		int[] array3 = new int[]{1, 2, 3, 4, 5}; 
+		int[] array4 = {1, 2, 3, 4, 5};
+		
+		int[][] matrix; // reference of type int[][]
+		matrix = new int[3][]; // Array of 3 references of type int[]
+		matrix[1] = new int[4]; // created an array of type int[] of size 4 and it pointed by the 2nd reference in array of type int[][]
+		matirx[0] = new int[2]; // reference of type int[] is refrencing to the array of 2 int elements
+		int _; // Error
+		int 2d; // Error
+		int _num; // fine
+		int array2d; // good
+	}
+}
+
+RELATIONSHIPS IN OOP:
+Generalisation (Inheritance) is-a type-of
+Association		has-a	part-of
+	Aggregation (Weak or Optional association)
+	Composition (Strong association)
+
+Inheritance:
+suv is-a car is-a vehicle
+
+Aggregation:
+	When the whole object existance is independent of the part object then it is aggregation
+	When the part object (containee) and the whole object (container) can exist independent of eachother.
+Composition:
+	When the whole object existence is dependent on the part object existance.
+	When the containee and container cannot exist independetn of eachother.
+
+CONSTRUCTORS:
+* A constructor is a instance method.
+* It is called/invoked always implicitly (by the JVM) as soon as an object is created (Objects gets memory allocation. That means object's reference value is created)
+* The object must have same name as that of the class so that the compiler/JVM knows which of the non static methods in the class are the constructors.
+* We can define more than 1 constructor in class. Thus all the constructors must/will have same name. This concept is caleld as FUNCTION OVERLOADING.
+* 
+Assume there is class by name Flight
+Flight() {
+
+}
+
+Flight(String code) {
+
+}
+
+main() { // Assume the systax is correct
+	Flight flight = new Flight();
+}
+
+String calcBillAmount(int, float) {
+
+}
+
+int calcBillAmount(int, float) {
+
+}
+
+calcBillAmount(35, 45.5f);
+* FUNCTION OVERLOADING:
+-> Function Overloading is Compile time (static/early) binding/polymorphism.
+-> Whcih of the overloaded method must be called is decided compiler.
+-> The overloaded methods if have same arument list but different return types then it is an error. Because the change must be present at prologue and if the change is only present at epilogue.
+-> The overloaded methods must differ in their argument list either by number of arguments or data type of the arguments, or if in case if both the number of arguments and their types are same then the order must be different.
+* The job of a constructor is to initialize an object.
+* A constructor cannot return a value ever. Thus its return type is always void. Now something which is always, in programming must be implicit. Because its always well known. Thus mentioning the return type for a constructor becomes redundant. And hence there must be no return type to a constructor.
+* A constructor cannot static. Because a constructor is working for an object. And it is always has "this". Hence it cannot be static.
+* Constructor is usually (99% of the cases) is public. However, they can be private also.
+* Constructor cannot be final. Because all constructors are always final by nature. That is, suppose the constructor is overridden in the sub class, and we create an object of the base class, the overridden constructor in sub class becomes ALWAYS unreachable. Thus, constructors are by nature always are final. Hence it would be redundant to mark them final.
+* Contructors cannot be abstract.Because 1st of all a class whose instance method is abstract its object cannot be created. Further, even if the constructor is defined in the derived class, we know it is unreacheble.
+
+// Naming standard for read only variable:
+private int final MAXIMUM_COUNT;
+
+ABSTRACT CLASS:
+* A class which has at least one abstract method must be marked abstract.
+* A class having all methods defined can also be abstract.
+* A class having all methods abstract (except constructors) is said to be 100% abstract.
+* The derived class which inherits an abstract class can be a concrete class only if it defines all the abstract methods of the parent class and it itself doesnt declares any anstract method.
+* If the derived class fails to define anyone of the abstract methods of the parent class then it itself must be marked abstract.
+* An abstract class can still be used via its static members.
+
+In Java:
+public class B1 extends A1 {
+	public B1(int x, int y) 
+	{
+		super(y);
+		this.x = x;
+	}
+}
+
+In C++:
+class B1 : public A1 {
+	public B1(int x, int y) : A1(y)
+	{
+		this.x = x;
+	}
+};
+-----------------------------------------------------
+Create a class to which only one onject can be created:
+
+public class A1 {
+
+}
+public class User {
+	A a1 = new A();
+	A a2 = new A();
+}
+
+
+import java.util.Scanner;
+
+class Person {
+    private int id;
+    private String name;
+    private char gender;
+    private String location;
+    private static Person person;
+    
+    private Person() {
+        System.out.println("Person object is created");
+    }
+    
+    public static Person createPerson() {
+        if (person == null) {
+            person = new Person();
+        }
+        return person;
+    }
+    
+    public void setPerson(int id, String name, char gender, String location) {
+        this.id = id;
+        this.name = name;
+        this.gender = gender;
+        this.location = location;
+    }
+    
+    @Override
+    public String toString() {
+        return "Person Details = Id:" + id + ", Name:" + name +
+         ", Gender:" + gender + ", Location:" + location;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Person person1 = Person.createPerson();
+        person1.setPerson(101, "nithin", 'm', "mysuru");
+        System.out.println(person1); // System.out.print(person.toString());
+        
+        Person person2 = Person.createPerson();
+        System.out.println(person2); // System.out.print(person.toString());
+        person2.setPerson(102, "aadya", 'f', "mysuru");
+        System.out.println(person1); // System.out.print(person.toString());
+    }
+}
+
+Output:
+Person object is created
+Person Details = Id:101, Name:nithin, Gender:m, Location:mysuru
+Person Details = Id:101, Name:nithin, Gender:m, Location:mysuru
+Person Details = Id:102, Name:aadya, Gender:f, Location:mysuru
