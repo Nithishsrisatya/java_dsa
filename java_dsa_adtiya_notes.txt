@@ -857,3 +857,28 @@ Person object is created
 Person Details = Id:101, Name:nithin, Gender:m, Location:mysuru
 Person Details = Id:101, Name:nithin, Gender:m, Location:mysuru
 Person Details = Id:102, Name:aadya, Gender:f, Location:mysuru
+-----------------------------------------------------------------------
+main():
+read T
+String[] output = readData()
+print output
+
+readData(T):
+	String output[T]
+	for j from 1 to T do:
+		Read N
+		boys[N]
+		girls[N]
+		for i from 0 to N-1 do:
+			read boys[i]
+		for i from 0 to N-1 do:
+			read girls[i]
+		sort boys
+		sort girls
+		output[j] = checkArrangement(boys, girls)
+
+String checkArrangement(boys, girls):
+	ALGORITHM
+
+
+

@@ -57,3 +57,12 @@ Solve the below programs using Singleton class. Add the main() in a seperate cla
 2. Write a program to print the Nth Fibo term. Assume 1 and 2 as 1st 2 terms respectively.
 3. Print the Nth term if the series: 1 2 2 3 3 5 5 7 8 11 13 13
 
+I/Ps:
+originalString = "aditya"
+rotatedString = 'tyaadi'
+
+tempString = rS + rS;
+if tempString.subString(originalString);
+    stmt
+esle
+    stmt
